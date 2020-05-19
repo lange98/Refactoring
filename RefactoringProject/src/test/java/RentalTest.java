@@ -15,4 +15,7 @@ class RentalTest {
     void getMovie() {
         assertEquals(movieTest, rentalTest.getMovie());
     }
+
+    @Test
+    void calcCost(){ assertEquals( 0.0 , rentalTest.calcCost());}
 }
