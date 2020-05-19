@@ -21,7 +21,7 @@ class CustomerTest {
 
     Movie movieTest = new Movie("movieTest", 10);
     Rental rentalTest = new Rental(movieTest, 15);
-    
+
     @Test
     void addRental() {
         customerTest.addRental(rentalTest);
