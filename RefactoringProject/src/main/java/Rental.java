@@ -18,10 +18,10 @@ class Rental {
 
     public double calcCost()
     {
-        return movie.getCharge(daysRented);
+        return movie.calcCost(daysRented);
     }
     public int calcFrequentRenterPoints()
     {
-        return movie.getFrequentRenterPoints(daysRented);
+        return movie.calcFrequentRenterPoints(daysRented);
     }
 }

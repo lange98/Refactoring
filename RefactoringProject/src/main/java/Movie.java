@@ -23,7 +23,7 @@ public class Movie {
         return title;
     }
 
-    public double getCharge(int daysRented) {
+    public double calcCost(int daysRented) {
         double result = 0;
         switch (priceCode) {
             case Movie.REGULAR:
@@ -42,7 +42,7 @@ public class Movie {
         }
         return result;
     }
-    public int getFrequentRenterPoints(int daysRented) {
+    public int calcFrequentRenterPoints(int daysRented) {
         int result = 0;
         // add frequent renter points
         result++;
