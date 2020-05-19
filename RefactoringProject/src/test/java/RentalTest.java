@@ -18,4 +18,9 @@ class RentalTest {
 
     @Test
     void calcCost(){ assertEquals( 0.0 , rentalTest.calcCost());}
+
+    @Test
+    void calcFrequentRenterPoints(){
+        assertEquals(1.0, rentalTest.calcFrequentRenterPoints());
+    }
 }
