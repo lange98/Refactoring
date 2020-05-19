@@ -18,10 +18,13 @@ class Rental {
 
     public double calcCost()
     {
-        return movie.calcCost(daysRented);
+        return movie._price.calcCharge(daysRented);
     }
     public int calcFrequentRenterPoints()
     {
-        return movie.calcFrequentRenterPoints(daysRented);
+        if ((movie.getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1)
+            return 2;
+        else
+            return 1;
     }
 }

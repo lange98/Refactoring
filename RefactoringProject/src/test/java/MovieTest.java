@@ -11,13 +11,17 @@ class MovieTest {
     }
 
     @Test
-    void setPriceCode() {
-        testMovie.setPriceCode(15);
-        assertEquals(15, testMovie.getPriceCode());
+    void getTitle() {
+        assertEquals("testTitle", testMovie.getTitle());
     }
 
     @Test
-    void getTitle() {
-        assertEquals("testTitle", testMovie.getTitle());
+    public void getFrequentRenterPoints() {
+        assertEquals(1, testMovie.calcFrequentRenterPoints(0));
+    }
+
+    @Test
+    public void getCharge() {
+        assertEquals(30.0, testMovie.calcCharge(10), 0);
     }
 }
